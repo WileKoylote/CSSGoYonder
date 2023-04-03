@@ -1,79 +1,68 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*Body, Background, Header, Container Elements*/
+
 *{
 box-sizing: border-box;}
 
+body{background-image: url("img/sunsetground.jpg")}
+
 .container{
-width: 1000px;
+width: 800px;
 margin: 0 auto;
+padding: 0;
 font-family: "bungee", sans-serif;
 font-weight: 400;
 font-style: normal;}
 
-header{
-width:1000px;
+.head{
 text-align: center;
-background-color: #4b3933;}
+background-color: #4b3933;
+height: 225px}
 
-nav{
-width:1000px;
-padding: 1px 1px 1px 1px;
-background-color: #4b3933;}
-
-@media screen and (max-width: 850px) {
-  header {width: 90%px; text-align: left;}
-    .container {width: 90%}
+@media screen and (max-width: 800px) {
+    .container{width: 40%}
 }
 
-    
-/*Making my nav center, styled, and spaced*/
-ul{
-margin:0;
-padding:5;}
+/*Navigation Setup*/
 
-.navitems{list-style: none;
+.flex-nav{
+background-color: #4b3933;
+margin: 0;
+padding: 1px 11px 1px 11px;
+height: 70px}
+
+.nav-list{
 display: flex;
 justify-content: center;
-flex-wrap: wrap;}
+list-style: none;
+flex-wrap:wrap;
+padding: 0px 10px 0px 10px;}
 
-.item{
-margin: 0px 25px 0px 25px;}
-
-.navitems a:link, a:visited{
-text-decoration: none;
-color: white;
-background-color: black;
-padding: 5px 10px 5px 10px;
+.nav-item{
+background-color: #1D1D1D;
+padding: 0px 10px 0px 10px;
 text-align: center;}
 
-@media (max-width: 850px) {
-    .navitems {flex-direction: column; flex:100%}
-    
+.nav-item a:link, a:visited{
+color: #fff0ce;
+text-decoration: none;}
+
+.nav-item a:hover{
+color: #7ce2ba;
+font-family: "bungee", sans-serif;
+font-weight: 800;
+font-style: normal;}
+
+#home{margin: 5px 25px 5px 25px;}
+#plan{margin: 5px 25px 5px 25px;}
+#explore{margin: 5px 25px 5px 25px;}
+#about{margin: 5px 25px 5px 25px;}
+
+@media screen and (max-width:800px){
+    .flex-nav{flex-direction: column;}
 }
-
-/*Making flex box work*/
-.flex-container{
-display: flex;
-flex-wrap: wrap;
-flex-flow: column;
-align-items: stretch;
-}
-
-.makeMestack{
-background-color: aqua
-}
-
-@media (max-width:850px) {
-    .makeMestack {flex:100%}
-}
-
-
-
-
-
-
-
-
 
 
 
