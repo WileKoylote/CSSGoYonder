@@ -1,2 +1,2 @@
-# CSSGoYonder
- For CSS Learning
+# CSS-Flexbox-Demo
+For IMED Assignment
