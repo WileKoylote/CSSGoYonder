@@ -78,6 +78,33 @@
         <div class="foot-container">
             <div class="foot-box">
                 <p>Some Text</p>
+                
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="/resources/demos/style.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+                    <script>
+                        $( function() {
+                        $( "#tabs" ).tabs();
+                        } );
+                    </script>
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">My mood</a></li>
+                    <li><a href="#tabs-2">My day</a></li>
+                    <li><a href="#tabs-3">Me right now</a></li>
+                </ul>
+            <div id="tabs-1">
+                <p>Great</p>
+            </div>
+            <div id="tabs-2">
+                <p>Amazing</p>
+              </div>
+            <div id="tabs-3">
+                <p>Tried But Happy</p>
+            </div>
+            </div>
             </div>
         </div>
     </footer>
